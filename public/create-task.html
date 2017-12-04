@@ -1,0 +1,21 @@
+<div class="container-fluid">
+	<div class="row">
+		<form>
+		  <div class="form-group">
+		    <label for="description">Description</label>
+		    <input type="text" class="form-control" id="description" aria-describedby="description" placeholder="Enter Description" ng-model="task.description">
+		  </div>
+		  <div class="form-group">
+		    <label for="date">Pick Date</label>
+		   	<input type="date" class="form-control" id="date" aria-describedby="date" placeholder="Pick a date" ng-model="task.date">
+		  </div>
+		  <div class="form-group">
+		    <label for="person">Pick Person</label>
+		    <select ng-model="task.personName" id="person">
+		    	<option ng-repeat="person in persons" value="{{person._id}}">{{person.name}}</option>
+		    </select>
+		  </div>
+		  <button ng-click="sendTask()" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
+</div>

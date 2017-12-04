@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+
+ <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+          <h2>Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Date</th>
+                  <th>Person</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="task in tasks">
+                  <td>{{task.description}}</td>
+                  <td>{{task.date}}</td>
+                  <td>{{task.personName.name}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
